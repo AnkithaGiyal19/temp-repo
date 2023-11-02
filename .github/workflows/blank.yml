@@ -32,11 +32,13 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: testing secrets
         run: |
-          if [ "$secret1" ==  "THISISSECRET" ]
-          Then
-            echo "SECRET IS MATCHING"
+          echo "secret is :$secret1"
+          if [ "$secret1" ==  "THISISSECRET" ] 
+          then
+            echo " SECRET IS MATCHING "
 
           fi
+          
           
          
           
