@@ -33,7 +33,7 @@ jobs:
       - name: testing secrets
         run: |
           echo "secret is :$secret1"
-          if [ "$secret1" ==  "THISISSECRET" ] 
+          if [ "$secret1" ==  "SECRET_VALUE" ] 
           then
             echo " SECRET IS MATCHING "
 
