@@ -32,7 +32,11 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: testing secrets
         run: |
-          echo "$secret1"
+          if ["$secret1" ==  "THISISSECRET"]
+          Then
+            echo "SECRET IS MATCHING"
+          fi
+          
         env:
           secret1: ${{ secrets.SECRET1}}
         
